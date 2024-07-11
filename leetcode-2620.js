@@ -1,3 +1,5 @@
+// Counter
+
 /**
  * @param {number} n
  * @return {Function} counter
