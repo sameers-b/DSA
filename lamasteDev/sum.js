@@ -8,3 +8,8 @@ return sum
 }
 
 module.exports = sum
+
+
+
+// second way
+return args.reduce((sum, num)=>sum+num,0)
