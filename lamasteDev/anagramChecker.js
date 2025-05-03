@@ -3,11 +3,14 @@
 
 
 function isAnagram(str1, str2) {
-    // Your implementation
-    if (str1.length !== str2.length) return false;
-
-    if (str1.split("").sort().join("").toLowerCase() === str2.split("").sort().join("").toLowerCase()) return true
-    return false
+    str1 = str1.toLowerCase().replace(/[^a-z0-9]/g, '');
+    str2=str2.toLowerCase().replace(/[^a-z0-9]/g, '');
+    
+    
+        if (str1.length !== str2.length) return false;
+    
+        if (str1.split("").sort().join("").toLowerCase() === str2.split("").sort().join("").toLowerCase()) return true
+        return false
 }
 
 module.exports = isAnagram
