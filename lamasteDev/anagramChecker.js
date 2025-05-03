@@ -1,3 +1,7 @@
+// if they have the same characters with the same frequency, 
+// but the order of the characters is different. For example, “listen” and “silent” 
+
+
 function isAnagram(str1, str2) {
     // Your implementation
     if (str1.length !== str2.length) return false;
