@@ -27,4 +27,27 @@ var convertChunks = function (arr, size) {
     }
     return result;
 };
+
+// another apporch
+function chunkArray(arr, n) {
+    // Your implementation
+    let result = [];
+    let chunk = []
+
+    if (arr.length <= n)
+        return arr.length==0?[]:[arr];
+    
+    for (let i = 0; i < arr.length; i++){
+        chunk.push(arr[i])
+        if (chunk.length == n||i === arr.length - 1) {
+            result.push([...chunk])
+            chunk.length=0
+        }
+    }
+    return result
+}
+
+
+
+
 console.log(convertChunks([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
