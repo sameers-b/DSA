@@ -8,6 +8,9 @@ Real DOM and Virtual DOM?
 reconciliation
 // The process where React compares the Virtual DOM with the previous version to update the Real DOM efficiently.
 
+diffing algorithm
+
+
 controlled and uncontrolled components?
 // Controlled: Form data handled by React state.
 // Uncontrolled: Form data handled by the DOM (using ref).
