@@ -1,20 +1,39 @@
 // Question: Remove duplicates from an array in-place and return new length.
 
-
-function removeDuplicates(nums) {
-    if (nums.length === 0) return 0;
-    
-    let i = 0;
-    for (let j = 1; j < nums.length; j++) {
-      if (nums[j] !== nums[i]) {
-        i++;
-        nums[i] = nums[j];
-      }
-    }
-    return i + 1;
-  }
+  function removeDuplicates(nums) {
+  if (nums.length === 0) return [];
   
-  // Example
-  const arr = [1, 1, 2];
-  console.log(removeDuplicates(arr)); // 2
-  console.log(arr); // [1, 2, 2] (first 2 elements are unique)
+  const result = [nums[0]];
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] !== nums[i - 1]) {
+      result.push(nums[i]);
+    }
+  }
+  return result;
+}
+
+const arr = [1, 1, 2];
+console.log(removeDuplicates(arr)); // [1, 2]
+
+// second way
+function removeDuplicates(nums) {
+  return [...new Set(nums)];
+}
+
+const arr = [3, 1, 2, 1, 3, 4];
+console.log(removeDuplicates(arr)); // [3, 1, 2, 4] (order may vary)
+
+// third way
+function removeDuplicates(nums) {
+  const seen = {};
+  return nums.filter(item => {
+    if (!seen[item]) {
+      seen[item] = true;
+      return true;
+    }
+    return false;
+  });
+}
+
+const arr = [3, 1, 2, 1, 3, 4];
+console.log(removeDuplicates(arr)); // [3, 1, 2, 4] (order preserved)
