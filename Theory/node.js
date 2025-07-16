@@ -25,3 +25,14 @@ Check Phase
 
 Close Callbacks Phase
 // Executes socket/handle close events (socket.on('close', ...))
+
+How does Node.js handle asynchronous I/O without multithreading?
+
+// LibUV's Event Loop: Implements kernel-level async I/O (epoll/kqueue/IOCP)
+
+// Thread Pool: Offloads blocking operations (FS, crypto) to worker threads
+
+// Callback Queue: Executes completed I/O operations in the event loop phases
+
+CORS
+// It’s enforced by browsers to prevent malicious websites from accessing resources from another domain without permission.

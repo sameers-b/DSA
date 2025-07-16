@@ -53,3 +53,6 @@ Async/Await
 // Async/await is a modern syntax for working with asynchronous operations in JavaScript 
 // that makes asynchronous code look and behave more like synchronous code. 
 // It's built on top of Promises but provides a more readable and maintainable way to handle asynchronous operations.
+
+Authentication (Who Are You?)
+Authorization (What Can You Do?)
