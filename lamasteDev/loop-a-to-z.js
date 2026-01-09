@@ -1,3 +1,6 @@
+//  'A'.charCodeAt(0)  = 65
+//  String.fromCharCode(65)   = A
+
 function generateAtoZ() {
   // your solution here
   let count = 65;
