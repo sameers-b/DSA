@@ -15,6 +15,52 @@ VPNs (Virtual Private Networks): Restrict API access to specific networks, usefu
 
 CSRF (Cross-Site Request Forgery): Explains how attackers trick logged-in users into making unwanted requests. 
                Prevention involves using CSRF tokens in combination with session cookies.
-               
+
 XSS (Cross-Site Scripting): Describes how attackers inject malicious scripts into web pages viewed by other users, 
                often through comment sections. These scripts can steal cookies or inject data into databases.
+
+
+------------------------
+
+API Design Fundamentals: 
+    This section introduces what APIs are, their role in system architecture, and the three most common API 
+    styles: REST, GraphQL, and gRPC. It emphasizes four essential design principles for great APIs: consistency, 
+    simplicity, security, and performance. The process of API design, from requirement understanding to deployment 
+    and maintenance, is also discussed.
+
+API Protocols: 
+    The video explains the role of API protocols in the network stack and details common application layer 
+    protocols like HTTP, HTTPS, WebSockets, AMQP (Advanced Message Queuing Protocol), and gRPC. It highlights how each 
+    protocol affects API structure, performance, and capabilities, advising on choosing the right protocol based on 
+    specific API requirements.
+
+Transport Layer: TCP & UDP: 
+    This part delves into the transport layer protocols, TCP (Transmission Control Protocol) and 
+    UDP (User Datagram Protocol). It contrasts TCP as reliable but slower, suitable for data integrity 
+    (e.g., payments, authentication), with UDP as faster and less reliable, ideal for real-time communication where some data 
+    loss is acceptable (e.g., video streaming, gaming).
+
+RESTful API Design: 
+    The video focuses on designing clean REST APIs. Key aspects include resource modeling (using nouns for URLs), 
+    URL design, and incorporating filtering, sorting, and pagination for efficient data retrieval. 
+    It also covers the standard HTTP methods (GET, POST, PUT, PATCH, DELETE) for CRUD operations and the appropriate 
+    use of HTTP status codes for responses and error handling.
+
+GraphQL API Design: 
+    This section introduces GraphQL as an API style that allows clients to request exactly what they need with a 
+    single endpoint, reducing round trips for complex UIs. It contrasts GraphQL's query and mutation operations 
+    with REST's methods and discusses its schema evolution without explicit versioning.
+
+Authentication: 
+    This segment defines authentication as verifying a user's identity and explores various authentication methods, 
+    including API keys, Basic Auth, Bearer tokens (like JWTs), OAuth, and OpenID Connect.
+
+Authorization: 
+    Authorization is explained as determining what an authenticated user is allowed to do. 
+    It covers different authorization models such as Role-Based Access Control (RBAC), Attribute-Based Access 
+    Control (ABAC), and Access Control Lists (ACLs).
+
+Security: 
+    The video emphasizes security best practices for APIs, including input validation, rate limiting, 
+    and protection against common threats like SQL injection, XSS, CSRF, and DDoS attacks.
+
