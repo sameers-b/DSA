@@ -1,23 +1,30 @@
-Rate Limiting: Controls the number of requests a client can make in a given time to prevent system overload 
-               and brute-force attacks. This can be set per endpoint, user, IP address, or overall.
+Rate Limiting: 
+    Controls the number of requests a client can make in a given time to prevent system overload 
+    and brute-force attacks. This can be set per endpoint, user, IP address, or overall.
 
-CORS (Cross-Origin Resource Sharing): Specifies which domains are allowed to call your API from a browser, 
-               preventing malicious websites from making requests on behalf of users.
+CORS (Cross-Origin Resource Sharing): 
+    Specifies which domains are allowed to call your API from a browser, 
+    preventing malicious websites from making requests on behalf of users.
 
-SQL & NoSQL Injections: Discusses how attackers can manipulate user input to execute malicious database queries. 
-               The solution involves using parameterized queries or ORM safeguards.
+SQL & NoSQL Injections: 
+    Discusses how attackers can manipulate user input to execute malicious database queries. 
+    The solution involves using parameterized queries or ORM safeguards.
 
-Firewalls: Act as gatekeepers, filtering malicious traffic (e.g., suspicious SQL keywords or HTTP methods) 
-               from legitimate requests before they reach the API.
+Firewalls: 
+    Act as gatekeepers, filtering malicious traffic (e.g., suspicious SQL keywords or HTTP methods) 
+    from legitimate requests before they reach the API.
 
-VPNs (Virtual Private Networks): Restrict API access to specific networks, useful for internal tools and preventing 
-               external users from reaching private APIs.
+VPNs (Virtual Private Networks): 
+    Restrict API access to specific networks, useful for internal tools and preventing 
+    external users from reaching private APIs.
 
-CSRF (Cross-Site Request Forgery): Explains how attackers trick logged-in users into making unwanted requests. 
-               Prevention involves using CSRF tokens in combination with session cookies.
+CSRF (Cross-Site Request Forgery): 
+    Explains how attackers trick logged-in users into making unwanted requests. 
+    Prevention involves using CSRF tokens in combination with session cookies.
 
-XSS (Cross-Site Scripting): Describes how attackers inject malicious scripts into web pages viewed by other users, 
-               often through comment sections. These scripts can steal cookies or inject data into databases.
+XSS (Cross-Site Scripting): 
+    Describes how attackers inject malicious scripts into web pages viewed by other users, 
+    often through comment sections. These scripts can steal cookies or inject data into databases.
 
 
 ------------------------
