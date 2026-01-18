@@ -1,0 +1,85 @@
+
+What is Data, Structure, and Algorithm?:
+
+Data: 
+   Defined as a set of information or a collection of data, which is the raw material needed to build any program. 
+   Examples like adding two numbers or making tea are used to illustrate this.
+
+Structure: 
+   Explained as the way data is stored to be easily accessed and used. Various data structures are introduced, 
+   including linear structures like arrays, linked lists, stacks, and queues (5:40-5:58), and non-linear structures 
+   like trees and graphs (6:00-6:04). The choice of structure depends on the specific requirements of the software. 
+   An analogy of storing water in different containers (jar, bucket, glass) is used to illustrate the importance of 
+   choosing the right structure for efficient use.
+
+Algorithm: 
+   Defined as a set of instructions to process the stored information. Just as there can be different ways to make 
+   tea with different outcomes, there can be different algorithms to solve a problem, leading to different software outputs.
+
+Why Time Complexity?: 
+   When multiple software solutions work correctly, time complexity is used to compare them and determine which one is better. 
+   A better software is one that completes the task in less time (10:57-11:00). The video explains that comparing software based 
+   on clock time or lines of code is unreliable due to varying computer performance and looping structures. Instead, 
+   a mathematical method is used to calculate time complexity.
+
+Basics for Time Complexity Calculation: 
+   The core idea is that when calculating time complexity, we focus on the most dominant or time-consuming part of 
+   the program, neglecting smaller or constant operations. Analogies like buying a car vs. a bicycle, or lending a 
+   arge sum plus a small amount, are used to explain this concept of focusing on the "major amount" or "most time-consuming" part.
+
+Comparison of Algorithmic Efficiencies: 
+   A hierarchy of common time complexities is presented to understand which algorithms are more efficient. 
+   The order from fastest to slowest for very large inputs (n) is: 1 < log log n < log n < √n < n < n log n < n² < n³ < 2ⁿ < n!. 
+   Algorithms with lower time complexity are considered better.
+
+   Constant Time:
+     O(1)
+
+   Logarithmic Time:
+     O(log log n)
+     O(log n)
+
+   Sub-Linear Time:
+     O(√n)
+
+   Linear Time:
+     O(n)
+
+   Linearithmic Time:
+     O(n log n)
+
+   Polynomial Time:
+     O(n²)
+     O(n³)
+     O(n⁴)
+     O(nᵏ) where k > 1
+
+   Exponential Time:
+     O(2ⁿ)
+     O(3ⁿ)
+
+   Factorial Time:
+     O(n!)
+
+   Super-Exponential Time:
+     O(nⁿ)
+
+Mathematical Functions and Dominating Terms: 
+   The video introduces different types of mathematical functions (constant, linear, quadratic, cubic, logarithmic, exponential) 
+   and explains how to identify the most dominating term in each. This concept is crucial because when converting a program 
+   into a mathematical equation for time complexity, only the most dominating term is considered, while constants and 
+   lower-order terms are ignored.
+
+Types of Analysis / Asymptotic Notations: Three types of analysis are discussed for evaluating algorithms:
+
+Best Case (Omega Notation - Ω): Represents the minimum time an algorithm will take.
+Average Case (Theta Notation - Θ): Represents the typical time an algorithm takes.
+Worst Case (Big O Notation - O): Represents the maximum time an algorithm will take. 
+   The video emphasizes that Big O notation (worst case) is the most commonly used and focused on, as it prepares for the 
+   most challenging scenarios.
+
+Constant Time Complexity: 
+   This section defines and explains constant time complexity (Big O of 1 - O(1)). It applies to programs where the 
+   execution time does not depend on the input size. This typically means no loops or recursion are involved. 
+   Simple assignments or conditional statements that run only once are examples of constant time operations.
+
