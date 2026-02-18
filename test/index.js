@@ -1,6 +1,7 @@
 /*second largest*/
 
 let arr =[9,6,3,0,10,0,7,4,7,8];
+---
 // const findSecondLargest=(arr)=>{
 //   let firstLargest=-1;
 //   let secondLargest= -1;
@@ -25,7 +26,7 @@ let arr =[9,6,3,0,10,0,7,4,7,8];
 //   }
 //   return firstLargest;
 // }
-
+----
 // const moveAllZeroToEnd=(arr)=>{
 // let count = 0;
 //     for (let i = 0; i < arr.length; i++) {
@@ -39,7 +40,7 @@ let arr =[9,6,3,0,10,0,7,4,7,8];
 //     }
 //     return arr
 // }
-
+----
 // const twoSum=(arr, target)=>{
 //   const obj = {}
 
@@ -51,7 +52,7 @@ let arr =[9,6,3,0,10,0,7,4,7,8];
 //   	obj[arr[i]] = i
 //   }
 // }
-
+-----
 // const checkPrimeOrNot=(num)=>{
 //   if (num < 2) return false;
 //   for(let i=2;i<=num/2;i++){
@@ -59,7 +60,7 @@ let arr =[9,6,3,0,10,0,7,4,7,8];
 //   }
 //   return true;
 // }
-
+-----
 // const findAllPrimeNumber=(start,end)=>{
 //   let list=[]
 //   for(let i=start;i<=end;i++){
@@ -67,7 +68,7 @@ let arr =[9,6,3,0,10,0,7,4,7,8];
 //   }
 //   return list
 // }
-
+----
 // const isEven=(num)=>{
 //   if(num%2===0) return true
 //   return false
@@ -77,7 +78,7 @@ let arr =[9,6,3,0,10,0,7,4,7,8];
 //   if(num%2!=0) true
 //   return false
 // }
-
+----
 // function linearSearch(arr, target) {
 //     for (let i = 0; i < arr.length; i++) {
 //         if (arr[i] === target) {
@@ -88,7 +89,7 @@ let arr =[9,6,3,0,10,0,7,4,7,8];
 // }
 
 // console.log(linearSearch([10, 20, 30, 40, 50], 30)); // Output: 2
-
+----
 // function binarySearch(arr, target) {
 //     let left = 0, right = arr.length - 1;
     
